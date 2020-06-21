@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    margin: auto;
+}
+
+.smq-swiper .smq-side.left {
+    left: 0;
+}
+
+.smq-swiper .smq-side.right {
+    right: 0;
+}
+
+.smq-swiper .smq-side {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    user-select: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #cccccc7d;
+    cursor: pointer;
+}
+
+.smq-swiper:hover .smq-side{
+    display: block;
+}

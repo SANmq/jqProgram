@@ -4,10 +4,10 @@
             if (this.itemImg.length > 0) {
 
             } else {
-                for(let item of this.itemDom){
+                for (let item of this.itemDom) {
                     item.addClass("myItem").css({
-                        width:"600px",
-                        height:"400px"
+                        width: "600px",
+                        height: "400px"
                     }).appendTo(this.wipper)
                     console.log(item)
                 }
@@ -57,6 +57,13 @@
     }
 }(jQuery))
 
+option = {
+    changeType: 'fadeD',
+    autoPlay: false,
+    discBar: false,
+    sidebutton:false,
+    changeTend:horizontal,
+    
+}
 
-
-$("#app").swiper()
+$("#app").swiper(option)
