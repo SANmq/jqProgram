@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="css/smqPlus.css">
+    <link rel="stylesheet" href="css/smqSwiper.css">
+
 </head>
 
 <body>
-    <div id="app" style="background-color: aqua;">
-
-
-
+    <div id="app">
     </div>
-    <script src="js/wipper1.js"></script>
+    <script src="js/wipper.js"></script>
+    <script>
+        $('#app').smqSwiper({
+            animateType: "fade",
+            item: ['img/test.jpeg', 'img/gun.jpg', 'img/teacher.png'], //一定要是列表，列表内是轮播元素的集合
+            autoPlay: 2000, // 填写毫秒数
+        })
+    </script>
 </body>
 
 </html>
